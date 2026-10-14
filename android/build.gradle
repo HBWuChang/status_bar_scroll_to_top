@@ -1,0 +1,12 @@
+group 'com.xiebian.statusbar_scroll_to_top'
+version '0.1.0'
+apply plugin: 'com.android.library'
+android {
+    namespace 'com.xiebian.statusbar_scroll_to_top'
+    compileSdk 36
+    defaultConfig { minSdk 24 }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
