@@ -2,7 +2,7 @@
 
 实验性的 Android Flutter 插件，通过原生 ScrollView 代理将厂商系统的
 状态栏回顶行为转发给当前 Flutter 页面。FVM 固定为 Flutter 3.41.9。
-目前以本地 path 包使用，不发布 pub.dev。
+已发布到 pub.dev，也可用本地 path 依赖。许可证为 MIT。
 
 插件版诊断已在小米 23127PN0CC / Android 16 / HyperOS OS3.0 上
 通过 ActivityAware 自动接入，SurfaceView 和 TextureView 均连续三轮
@@ -10,7 +10,14 @@
 
 ## 接入
 
-在 listen1_xuan 的 pubspec.yaml 中添加：
+从 pub.dev 安装：
+
+```yaml
+dependencies:
+  status_bar_scroll_to_top: ^0.1.0
+```
+
+或用本地 path 依赖：
 
 ```yaml
 dependencies:
@@ -70,7 +77,7 @@ systemQuery、request、complete、timeout；不传时不进行调用栈诊断�
 其他厂商/系统版本、多个 Flutter 引擎共享 Activity、特殊 add-to-app 宿主
 尚未验证。代理需要非零尺寸与真实滚动范围，不能直接改为 GONE/零尺寸。
 
-## 验证
+## 开发与验证
 
 ```sh
 fvm use 3.41.9 --skip-pub-get

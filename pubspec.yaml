@@ -1,7 +1,8 @@
 name: status_bar_scroll_to_top
 description: Native Android scroll proxy forwarding OEM status bar scroll-to-top requests to Flutter.
 version: 0.1.0
-publish_to: none
+repository: https://github.com/HBWuChang/status_bar_scroll_to_top
+issue_tracker: https://github.com/HBWuChang/status_bar_scroll_to_top/issues
 environment:
   sdk: '>=3.10.0 <4.0.0'
   flutter: '>=3.41.0'
